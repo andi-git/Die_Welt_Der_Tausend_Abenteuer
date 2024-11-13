@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_items" />
 
     <fragment
+        android:id="@+id/navigation_hints"
+        android:name="eu.ahammer.dieweltdertausendabenteuer.ui.hints.HintsFragment"
+        android:label="@string/title_hints"
+        tools:layout="@layout/fragment_hints" />
+
+    <fragment
         android:id="@+id/navigation_home"
         android:name="eu.ahammer.dieweltdertausendabenteuer.ui.home.HomeFragment"
         android:label="@string/title_home"
