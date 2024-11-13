@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">Die Welt Der Tausend Abenteuer</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="title_hints">Hinweise</string>
     <string name="title_items">Gegenstände</string>
 </resources>
