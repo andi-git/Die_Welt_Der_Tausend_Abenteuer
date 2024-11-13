@@ -5,38 +5,32 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import eu.ahammer.dieweltdertausendabenteuer.databinding.FragmentItemsBinding
+import eu.ahammer.dieweltdertausendabenteuer.ui.MyFragment
 
-class ItemsFragment : Fragment() {
-
-    private var _binding: FragmentItemsBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+class ItemsFragment : MyFragment<FragmentItemsBinding, ItemsViewModel>(ItemsViewModel::class.java) {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val notificationsViewModel =
-            ViewModelProvider(this).get(ItemsViewModel::class.java)
-
-        _binding = FragmentItemsBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val textView: TextView = binding.textItems
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        withinContext(inflater, container) {
+            val textView: TextView = binding.textItems
+            getViewModel().text.observe(viewLifecycleOwner) {
+                textView.text = it
+            }
+            return binding.root
         }
-        return root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
+        destroyContext()
+    }
+
+    override fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?): FragmentItemsBinding {
+        return FragmentItemsBinding.inflate(inflater, container, false)
     }
 }
+

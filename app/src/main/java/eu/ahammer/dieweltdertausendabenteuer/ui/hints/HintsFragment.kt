@@ -13,8 +13,7 @@ class HintsFragment : Fragment() {
 
     private var _binding: FragmentHintsBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    // This property is only valid between onCreateView and onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,8 +21,7 @@ class HintsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val hintsViewModel =
-            ViewModelProvider(this).get(HintsViewModel::class.java)
+        val hintsViewModel = ViewModelProvider(this)[HintsViewModel::class.java]
 
         _binding = FragmentHintsBinding.inflate(inflater, container, false)
         val root: View = binding.root
