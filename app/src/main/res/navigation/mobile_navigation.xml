@@ -17,4 +17,10 @@
         android:label="@string/title_hints"
         tools:layout="@layout/fragment_hints" />
 
+    <fragment
+        android:id="@+id/navigation_fight"
+        android:name="eu.ahammer.dieweltdertausendabenteuer.ui.fight.FightFragment"
+        android:label="@string/title_fight"
+        tools:layout="@layout/fragment_fight" />
+
 </navigation>

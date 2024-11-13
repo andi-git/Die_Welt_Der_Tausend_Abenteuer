@@ -2,4 +2,5 @@
     <string name="app_name">Die Welt Der Tausend Abenteuer</string>
     <string name="title_hints">Hinweise</string>
     <string name="title_items">Gegenstände</string>
+    <string name="title_fight">Kampf</string>
 </resources>

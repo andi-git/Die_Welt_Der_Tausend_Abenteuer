@@ -11,4 +11,9 @@
         android:icon="@drawable/schriftrolle"
         android:title="@string/title_hints" />
 
+    <item
+        android:id="@+id/navigation_fight"
+        android:icon="@drawable/sword"
+        android:title="@string/title_fight" />
+
 </menu>
