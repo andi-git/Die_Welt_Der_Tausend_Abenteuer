@@ -3,4 +3,6 @@
     <string name="title_hints">Hinweise</string>
     <string name="title_items">Gegenstände</string>
     <string name="title_fight">Kampf</string>
+    <string name="default_item_text">Gegenstand</string>
+    <string name="button_delete">Löschen</string>
 </resources>
