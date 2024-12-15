@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_items"
-        android:name="eu.ahammer.dieweltdertausendabenteuer.ui.items.ItemsFragment"
+        android:name="eu.ahammer.dieweltdertausendabenteuer.view.items.ItemsFragment"
         android:label="@string/title_items"
         tools:layout="@layout/fragment_items" />
 
     <fragment
         android:id="@+id/navigation_hints"
-        android:name="eu.ahammer.dieweltdertausendabenteuer.ui.hints.HintsFragment"
+        android:name="eu.ahammer.dieweltdertausendabenteuer.view.hints.HintsFragment"
         android:label="@string/title_hints"
         tools:layout="@layout/fragment_hints" />
 
     <fragment
         android:id="@+id/navigation_fight"
-        android:name="eu.ahammer.dieweltdertausendabenteuer.ui.fight.FightFragment"
+        android:name="eu.ahammer.dieweltdertausendabenteuer.view.fight.FightFragment"
         android:label="@string/title_fight"
         tools:layout="@layout/fragment_fight" />
 

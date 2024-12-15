@@ -1,4 +1,4 @@
-package eu.ahammer.dieweltdertausendabenteuer.ui.fight
+package eu.ahammer.dieweltdertausendabenteuer.view.fight
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import eu.ahammer.dieweltdertausendabenteuer.databinding.FragmentFightBinding
-import eu.ahammer.dieweltdertausendabenteuer.ui.MyFragment
+import eu.ahammer.dieweltdertausendabenteuer.view.MyFragment
 
 class FightFragment : MyFragment<FragmentFightBinding, FightViewModel>(FightViewModel::class.java) {
 

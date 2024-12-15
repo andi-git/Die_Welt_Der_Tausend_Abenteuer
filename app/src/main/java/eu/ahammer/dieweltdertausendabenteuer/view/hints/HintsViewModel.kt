@@ -1,14 +1,13 @@
-package eu.ahammer.dieweltdertausendabenteuer.ui.fight
+package eu.ahammer.dieweltdertausendabenteuer.view.hints
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import kotlin.random.Random
 
-class FightViewModel : ViewModel() {
+class HintsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "Zeit zum Kämpfen! 🦷 ${(0..10).random()}"
+        value = "Die Hinweise"
     }
     val text: LiveData<String> = _text
 }

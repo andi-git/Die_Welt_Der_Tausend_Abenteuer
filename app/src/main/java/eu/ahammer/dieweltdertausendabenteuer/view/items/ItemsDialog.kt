@@ -1,4 +1,4 @@
-package eu.ahammer.dieweltdertausendabenteuer.ui.items
+package eu.ahammer.dieweltdertausendabenteuer.view.items
 
 import android.app.AlertDialog
 import android.content.Context
@@ -6,7 +6,6 @@ import android.text.InputType
 import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
-import eu.ahammer.dieweltdertausendabenteuer.model.DWdtADatabase
 import eu.ahammer.dieweltdertausendabenteuer.model.Item
 import eu.ahammer.dieweltdertausendabenteuer.viewmodel.items.ItemsViewModel
 import kotlinx.coroutines.Runnable

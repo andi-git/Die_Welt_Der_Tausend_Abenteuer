@@ -1,4 +1,4 @@
-package eu.ahammer.dieweltdertausendabenteuer.ui.items
+package eu.ahammer.dieweltdertausendabenteuer.view.items
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import eu.ahammer.dieweltdertausendabenteuer.databinding.FragmentItemsBinding
-import eu.ahammer.dieweltdertausendabenteuer.ui.MyFragment
+import eu.ahammer.dieweltdertausendabenteuer.view.MyFragment
 import eu.ahammer.dieweltdertausendabenteuer.viewmodel.items.ItemsAdapter
 import eu.ahammer.dieweltdertausendabenteuer.viewmodel.items.ItemsViewModel
 

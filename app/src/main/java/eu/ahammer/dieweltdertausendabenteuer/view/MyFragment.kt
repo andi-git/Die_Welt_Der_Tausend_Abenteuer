@@ -1,4 +1,4 @@
-package eu.ahammer.dieweltdertausendabenteuer.ui
+package eu.ahammer.dieweltdertausendabenteuer.view
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

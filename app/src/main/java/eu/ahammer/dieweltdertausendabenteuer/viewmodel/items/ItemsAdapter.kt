@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import eu.ahammer.dieweltdertausendabenteuer.databinding.ItemsLayoutBinding
 import eu.ahammer.dieweltdertausendabenteuer.model.DWdtADatabase
 import eu.ahammer.dieweltdertausendabenteuer.model.Item
-import eu.ahammer.dieweltdertausendabenteuer.ui.items.ItemsDialog
+import eu.ahammer.dieweltdertausendabenteuer.view.items.ItemsDialog
 
 class ItemsAdapter(val context: Context, val itemsViewModel: ItemsViewModel, val list: List<Item>) :
     RecyclerView.Adapter<ItemsAdapter.ViewHolder>() {

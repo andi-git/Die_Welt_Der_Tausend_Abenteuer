@@ -1,4 +1,4 @@
-package eu.ahammer.dieweltdertausendabenteuer.ui.hints
+package eu.ahammer.dieweltdertausendabenteuer.view.hints
 
 import android.os.Bundle
 import android.view.LayoutInflater
