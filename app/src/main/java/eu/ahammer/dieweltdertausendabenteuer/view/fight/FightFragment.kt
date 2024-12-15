@@ -5,10 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import eu.ahammer.dieweltdertausendabenteuer.databinding.FragmentFightBinding
+import eu.ahammer.dieweltdertausendabenteuer.databinding.FightFragmentBinding
 import eu.ahammer.dieweltdertausendabenteuer.view.MyFragment
 
-class FightFragment : MyFragment<FragmentFightBinding, FightViewModel>(FightViewModel::class.java) {
+class FightFragment : MyFragment<FightFragmentBinding, FightViewModel>(FightViewModel::class.java) {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,8 +29,8 @@ class FightFragment : MyFragment<FragmentFightBinding, FightViewModel>(FightView
         destroyContext()
     }
 
-    override fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?): FragmentFightBinding {
-        return FragmentFightBinding.inflate(inflater, container, false)
+    override fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?): FightFragmentBinding {
+        return FightFragmentBinding.inflate(inflater, container, false)
     }
 }
 

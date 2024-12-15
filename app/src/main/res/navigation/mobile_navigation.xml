@@ -9,18 +9,18 @@
         android:id="@+id/navigation_items"
         android:name="eu.ahammer.dieweltdertausendabenteuer.view.items.ItemsFragment"
         android:label="@string/title_items"
-        tools:layout="@layout/fragment_items" />
+        tools:layout="@layout/items_fragment" />
 
     <fragment
         android:id="@+id/navigation_hints"
         android:name="eu.ahammer.dieweltdertausendabenteuer.view.hints.HintsFragment"
         android:label="@string/title_hints"
-        tools:layout="@layout/fragment_hints" />
+        tools:layout="@layout/hints_fragment" />
 
     <fragment
         android:id="@+id/navigation_fight"
         android:name="eu.ahammer.dieweltdertausendabenteuer.view.fight.FightFragment"
         android:label="@string/title_fight"
-        tools:layout="@layout/fragment_fight" />
+        tools:layout="@layout/fight_fragment" />
 
 </navigation>

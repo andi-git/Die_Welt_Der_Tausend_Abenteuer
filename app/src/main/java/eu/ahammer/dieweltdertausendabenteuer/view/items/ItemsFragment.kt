@@ -6,12 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import eu.ahammer.dieweltdertausendabenteuer.databinding.FragmentItemsBinding
+import eu.ahammer.dieweltdertausendabenteuer.databinding.ItemsFragmentBinding
 import eu.ahammer.dieweltdertausendabenteuer.view.MyFragment
 import eu.ahammer.dieweltdertausendabenteuer.viewmodel.items.ItemsAdapter
 import eu.ahammer.dieweltdertausendabenteuer.viewmodel.items.ItemsViewModel
 
-class ItemsFragment : MyFragment<FragmentItemsBinding, ItemsViewModel>(ItemsViewModel::class.java) {
+class ItemsFragment : MyFragment<ItemsFragmentBinding, ItemsViewModel>(ItemsViewModel::class.java) {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -39,7 +39,7 @@ class ItemsFragment : MyFragment<FragmentItemsBinding, ItemsViewModel>(ItemsView
     override fun inflateBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
-    ): FragmentItemsBinding {
-        return FragmentItemsBinding.inflate(inflater, container, false)
+    ): ItemsFragmentBinding {
+        return ItemsFragmentBinding.inflate(inflater, container, false)
     }
 }
