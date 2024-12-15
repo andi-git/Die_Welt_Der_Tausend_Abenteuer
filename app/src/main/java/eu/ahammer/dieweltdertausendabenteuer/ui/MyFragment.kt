@@ -18,10 +18,10 @@ abstract class MyFragment<BINDING : ViewBinding, VIEWMODEL : ViewModel>
     protected inline fun <R> withinContext(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        block: () -> R
+        runWithinContext: () -> R
     ): R {
         _binding = inflateBinding(inflater, container)
-        return block()
+        return runWithinContext()
     }
 
     protected fun destroyContext() {
