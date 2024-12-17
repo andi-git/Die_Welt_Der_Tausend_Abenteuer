@@ -30,30 +30,6 @@
         android:id="@+id/itemRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <!--LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/itemName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/itemListLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <ListView
-                android:id="@+id/itemList"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </LinearLayout-->
     </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

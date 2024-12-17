@@ -4,5 +4,6 @@
     <string name="title_items">Gegenstände</string>
     <string name="title_fight">Kampf</string>
     <string name="default_item_text">Gegenstand</string>
+    <string name="default_hint_text">Hinweis</string>
     <string name="button_delete">Löschen</string>
 </resources>
