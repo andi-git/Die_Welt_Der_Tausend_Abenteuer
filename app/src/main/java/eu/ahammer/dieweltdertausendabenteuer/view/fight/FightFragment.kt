@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import eu.ahammer.dieweltdertausendabenteuer.databinding.FightFragmentBinding
 import eu.ahammer.dieweltdertausendabenteuer.view.MyFragment
 
@@ -16,10 +15,10 @@ class FightFragment : MyFragment<FightFragmentBinding, FightViewModel>(FightView
         savedInstanceState: Bundle?
     ): View {
         withinContext(inflater, container) {
-            val textView: TextView = binding.textFight
-            getViewModel().text.observe(viewLifecycleOwner) {
-                textView.text = it
-            }
+//            val textView: TextView = binding.textFight
+//            getViewModel().text.observe(viewLifecycleOwner) {
+//                textView.text = it
+//            }
             return binding.root
         }
     }

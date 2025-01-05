@@ -3,7 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_items">
+    app:startDestination="@+id/navigation_common"
+    android:visibility="gone" >
+
+    <fragment
+        android:id="@+id/navigation_common"
+        android:name="eu.ahammer.dieweltdertausendabenteuer.view.common.CommonFragment"
+        android:label="@string/title_common"
+        tools:layout="@layout/common_fragment" />
 
     <fragment
         android:id="@+id/navigation_items"
