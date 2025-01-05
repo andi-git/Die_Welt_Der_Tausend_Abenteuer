@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "eu.ahammer.dieweltdertausendabenteuer"
-        minSdk = 24
+        minSdk = 29
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"

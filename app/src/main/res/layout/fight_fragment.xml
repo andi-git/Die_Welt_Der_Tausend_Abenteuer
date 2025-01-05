@@ -37,7 +37,8 @@
                     android:layout_weight="1"
                     android:text="1"
                     android:layout_marginStart="2dp"
-                    android:layout_marginEnd="2dp"/>
+                    android:layout_marginEnd="2dp"
+                    android:backgroundTint="@color/primary_blue"/>
 
                 <Button
                     android:id="@+id/fightButton2"
@@ -46,7 +47,8 @@
                     android:layout_weight="1"
                     android:text="2"
                     android:layout_marginStart="2dp"
-                    android:layout_marginEnd="2dp"/>
+                    android:layout_marginEnd="2dp"
+                    android:backgroundTint="@color/primary_blue"/>
 
                 <Button
                     android:id="@+id/fightButton3"
@@ -55,7 +57,8 @@
                     android:layout_weight="1"
                     android:text="3"
                     android:layout_marginStart="2dp"
-                    android:layout_marginEnd="2dp"/>
+                    android:layout_marginEnd="2dp"
+                    android:backgroundTint="@color/primary_blue"/>
 
                 <Button
                     android:id="@+id/fightButton4"
@@ -64,7 +67,8 @@
                     android:layout_weight="1"
                     android:text="4"
                     android:layout_marginStart="2dp"
-                    android:layout_marginEnd="2dp"/>
+                    android:layout_marginEnd="2dp"
+                    android:backgroundTint="@color/primary_blue"/>
 
             </LinearLayout>
 
@@ -83,7 +87,8 @@
                     android:layout_weight="1"
                     android:text="5"
                     android:layout_marginStart="2dp"
-                    android:layout_marginEnd="2dp"/>
+                    android:layout_marginEnd="2dp"
+                    android:backgroundTint="@color/primary_blue"/>
 
                 <Button
                     android:id="@+id/fightButton6"
@@ -92,7 +97,8 @@
                     android:layout_weight="1"
                     android:text="6"
                     android:layout_marginStart="2dp"
-                    android:layout_marginEnd="2dp"/>
+                    android:layout_marginEnd="2dp"
+                    android:backgroundTint="@color/primary_blue"/>
 
                 <Button
                     android:id="@+id/fightButton7"
@@ -101,7 +107,8 @@
                     android:layout_weight="1"
                     android:text="7"
                     android:layout_marginStart="2dp"
-                    android:layout_marginEnd="2dp"/>
+                    android:layout_marginEnd="2dp"
+                    android:backgroundTint="@color/primary_blue"/>
 
                 <Button
                     android:id="@+id/fightButton8"
@@ -110,7 +117,8 @@
                     android:layout_weight="1"
                     android:text="8"
                     android:layout_marginStart="2dp"
-                    android:layout_marginEnd="2dp"/>
+                    android:layout_marginEnd="2dp"
+                    android:backgroundTint="@color/primary_blue"/>
 
             </LinearLayout>
 
@@ -137,7 +145,8 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_weight="1"
-                android:text="A" />
+                android:text="A"
+                android:backgroundTint="@color/primary_blue"/>
 
             <Button
                 android:id="@+id/fightButtonB"
@@ -146,7 +155,8 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_weight="1"
-                android:text="B" />
+                android:text="B"
+                android:backgroundTint="@color/primary_blue"/>
 
             <Button
                 android:id="@+id/fightButtonC"
@@ -155,7 +165,8 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_weight="1"
-                android:text="C" />
+                android:text="C"
+                android:backgroundTint="@color/primary_blue"/>
 
             <Button
                 android:id="@+id/fightButtonD"
@@ -164,7 +175,8 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_weight="1"
-                android:text="D" />
+                android:text="D"
+                android:backgroundTint="@color/primary_blue"/>
 
             <Button
                 android:id="@+id/fightButtonE"
@@ -173,7 +185,8 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_weight="1"
-                android:text="E" />
+                android:text="E"
+                android:backgroundTint="@color/primary_blue"/>
 
         </LinearLayout>
 
@@ -190,7 +203,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:layout_marginEnd="4dp"
-            android:text="Kampf" />
+            android:text="Kampf"
+            android:backgroundTint="@color/primary_blue"/>
 
         <TextView
             android:id="@+id/fightTextResult"
