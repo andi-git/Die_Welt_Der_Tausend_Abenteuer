@@ -15,7 +15,12 @@
         android:contentDescription="button to add hints"
         android:focusable="true"
         android:padding="0dp"
-        android:src="@drawable/schriftrolle"
+
+        app:srcCompat="@drawable/add"
+        android:scaleType="center"
+        app:maxImageSize="56dp"
+        app:tint="@null"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias=".88"

@@ -8,17 +8,17 @@
 
     <item
         android:id="@+id/navigation_items"
-        android:icon="@drawable/sack"
+        android:icon="@drawable/bag"
         android:title="@string/title_items" />
 
     <item
         android:id="@+id/navigation_hints"
-        android:icon="@drawable/schriftrolle"
+        android:icon="@drawable/pen_and_paper"
         android:title="@string/title_hints" />
 
     <item
         android:id="@+id/navigation_fight"
-        android:icon="@drawable/sword"
+        android:icon="@drawable/sword_cross"
         android:title="@string/title_fight" />
 
 </menu>

@@ -37,12 +37,20 @@
         </LinearLayout>
 
         <ImageView
+            android:id="@+id/itemEditButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight=".1"
+            android:contentDescription="@string/button_edit"
+            android:src="@drawable/pen" />
+
+        <ImageView
             android:id="@+id/hintDeleteButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_weight=".1"
             android:contentDescription="@string/button_delete"
-            android:src="@drawable/knight" />
+            android:src="@drawable/trash" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>
