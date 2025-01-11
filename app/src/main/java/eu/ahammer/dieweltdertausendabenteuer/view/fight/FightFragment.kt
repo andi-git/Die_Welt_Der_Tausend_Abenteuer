@@ -1,13 +1,13 @@
 package eu.ahammer.dieweltdertausendabenteuer.view.fight
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import eu.ahammer.dieweltdertausendabenteuer.databinding.FightFragmentBinding
 import eu.ahammer.dieweltdertausendabenteuer.view.MyFragment
+import eu.ahammer.dieweltdertausendabenteuer.R
 
 class FightFragment : MyFragment<FightFragmentBinding, FightViewModel>(FightViewModel::class.java) {
 
@@ -116,13 +116,14 @@ class FightFragment : MyFragment<FightFragmentBinding, FightViewModel>(FightView
                 button.setOnClickListener {
                     fightButtonsNumber.forEach { otherButton ->
                         if (otherButton.id != button.id) {
-                            otherButton.deSelect()
+                            otherButton.deselect()
                         }
                     }
                     if (button.isSelected) {
-                        button.deSelect()
+                        button.deselect()
                     } else {
                         button.select()
+                        FightResult.EMPTY.setImage(binding)
                     }
                 }
             }
@@ -130,14 +131,14 @@ class FightFragment : MyFragment<FightFragmentBinding, FightViewModel>(FightView
                 button.setOnClickListener {
                     fightButtonsCharacter.forEach { otherButton ->
                         if (otherButton.id != button.id) {
-                            otherButton.deSelect()
+                            otherButton.deselect()
                         }
                     }
                     if (button.isSelected) {
-                        button.deSelect()
+                        button.deselect()
                     } else {
                         button.select()
-                        binding.fightResult.text = "..."
+                        FightResult.EMPTY.setImage(binding)
                     }
                 }
             }
@@ -147,9 +148,9 @@ class FightFragment : MyFragment<FightFragmentBinding, FightViewModel>(FightView
                 if (buttonNumber != null && buttonCharacter != null) {
                     val number: Int = buttonNumber.text.toString().toInt()
                     val character: Char = buttonCharacter.text.toString()[0]
-                    binding.fightResult.text = fightTable[number]?.get(character).toString()
-                    fightButtonsNumber.forEach { it.deSelect() }
-                    fightButtonsCharacter.forEach { it.deSelect() }
+                    fightTable[number]?.get(character)?.setImage(binding)
+                    fightButtonsNumber.forEach { it.deselect() }
+                    fightButtonsCharacter.forEach { it.deselect() }
                 }
             }
 
@@ -172,22 +173,35 @@ class FightFragment : MyFragment<FightFragmentBinding, FightViewModel>(FightView
 
 fun Button.select() {
     this.isSelected = true
-    this.setBackgroundColor(0xFFD2B48C.toInt())
-    this.setTextColor(0xFF000000.toInt())
+    this.setBackgroundColor(Color.BROWN_SECONDARY.intValue)
+    this.setTextColor(Color.BLACK.intValue)
 }
 
-fun Button.deSelect() {
+fun Button.deselect() {
     this.isSelected = false
-    this.setBackgroundColor(0xFF1F3C88.toInt())
-    this.setTextColor(0xFFFFFFFF.toInt())
+    this.setBackgroundColor(Color.BROWN_PRIMARY.intValue)
+    this.setTextColor(Color.WHITE.intValue)
 }
 
 fun List<Button>.selected(): Button? {
     return this.firstOrNull { it.isSelected }
 }
 
-enum class FightResult {
-    WIN,
-    LOSS,
-    DRAW
+enum class Color(val intValue: Int) {
+    WHITE(0xFFFFFFFF.toInt()),
+    BLACK(0xFF000000.toInt()),
+    BROWN_PRIMARY(0xFFC76F00.toInt()),
+    BROWN_SECONDARY(0xFFFFAF60.toInt())
+}
+
+enum class FightResult(val imageResource: Int) {
+
+    EMPTY(R.drawable.sword_empty),
+    WIN(R.drawable.sword_win),
+    LOSS(R.drawable.sword_loss),
+    DRAW(R.drawable.sword_cross);
+
+    fun setImage(binding: FightFragmentBinding) {
+        binding.fightResult.setImageResource(imageResource)
+    }
 }

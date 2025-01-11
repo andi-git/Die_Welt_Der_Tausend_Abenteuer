@@ -8,4 +8,21 @@
     <string name="default_hint_text">Hinweis</string>
     <string name="button_delete">Löschen</string>
     <string name="button_edit">Bearbeiten</string>
+    <string name="choose_a_number"><b>Wähle eine Nummer</b></string>
+    <string name="button_text_1">1</string>
+    <string name="button_text_2">2</string>
+    <string name="button_text_3">3</string>
+    <string name="button_text_4">4</string>
+    <string name="button_text_5">5</string>
+    <string name="button_text_6">6</string>
+    <string name="button_text_7">7</string>
+    <string name="button_text_8">8</string>
+    <string name="choose_a_char"><b>Wähle einen Buchstaben</b></string>
+    <string name="button_text_A">A</string>
+    <string name="button_text_B">B</string>
+    <string name="button_text_C">C</string>
+    <string name="button_text_D">D</string>
+    <string name="button_text_E">E</string>
+    <string name="do_fight"><b>Kämpfe</b></string>
+    <string name="fight">Kampf</string>
 </resources>
