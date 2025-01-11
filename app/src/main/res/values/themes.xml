@@ -2,11 +2,14 @@
     <!-- Base application theme. -->
     <style name="Theme.DieWeltDerTausendAbenteuer" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/brown_primary</item>
-        <item name="colorPrimaryVariant">@color/gray_dark</item>
+        <item name="colorPrimaryVariant">@color/gray_light</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/gray_dark</item>
-        <item name="colorSecondaryVariant">@color/gray_light</item>
+        <item name="colorSecondaryVariant">@color/white</item>
         <item name="colorOnSecondary">@color/black</item>
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/gray_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:navigationBarColor">@color/gray_light</item>
     </style>
 </resources>
