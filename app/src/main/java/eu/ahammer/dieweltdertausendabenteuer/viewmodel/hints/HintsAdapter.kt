@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import eu.ahammer.dieweltdertausendabenteuer.databinding.HintsLayoutBinding
-import eu.ahammer.dieweltdertausendabenteuer.model.DWdtADatabase
 import eu.ahammer.dieweltdertausendabenteuer.model.Hint
-import eu.ahammer.dieweltdertausendabenteuer.view.hints.HintsDialog
+import eu.ahammer.dieweltdertausendabenteuer.view.hints.HintsCreateEditDialog
+import eu.ahammer.dieweltdertausendabenteuer.view.hints.HintsDeleteDialog
 
 class HintsAdapter(val context: Context, val hintViewModel: HintsViewModel, val list: List<Hint>) :
     RecyclerView.Adapter<HintsAdapter.ViewHolder>() {
@@ -24,20 +24,24 @@ class HintsAdapter(val context: Context, val hintViewModel: HintsViewModel, val 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.hintName.text = list[position].text
         holder.binding.hintDeleteButton.setOnClickListener {
-            Log.i("hint", "remove hint ${list[position]}")
-            DWdtADatabase.get(context).hintDao().delete(list[position])
-            notifyItemRemoved(position)
+            val hintToDelete = list[position]
+            Log.i("hint", "remove hint $hintToDelete")
+            HintsDeleteDialog(hintViewModel).showDelete(
+                context = context,
+                hintToDelete = hintToDelete,
+                afterHintDeleted = {
+                    notifyItemRemoved(position)
+                })
         }
-        holder.itemView.setOnLongClickListener {
+        holder.binding.hintEditButton.setOnClickListener {
             val hintToChange = list[position]
-            Log.i("hint", "long click item $hintToChange")
-            HintsDialog(hintViewModel).showUpdate(
+            Log.i("hint", "remove hint $hintToChange")
+            HintsCreateEditDialog(hintViewModel).showUpdate(
                 context = context,
                 hintToChange = hintToChange,
                 afterHintChanged = {
                     notifyItemChanged(position)
                 })
-            true
         }
     }
 

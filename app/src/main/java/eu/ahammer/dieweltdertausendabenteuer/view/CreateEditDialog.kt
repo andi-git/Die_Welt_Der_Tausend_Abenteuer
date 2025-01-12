@@ -6,7 +6,7 @@ import android.text.InputType
 import android.widget.EditText
 import android.widget.Toast
 
-abstract class InputFieldDialog {
+abstract class CreateEditDialog {
 
     protected fun show(
         context: Context,

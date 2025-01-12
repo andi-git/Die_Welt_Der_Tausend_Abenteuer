@@ -23,6 +23,6 @@
     <string name="button_text_C">C</string>
     <string name="button_text_D">D</string>
     <string name="button_text_E">E</string>
-    <string name="do_fight"><b>Kämpfe</b></string>
+    <string name="do_fight"><b>Greife den Gegner an</b></string>
     <string name="fight">Kampf</string>
 </resources>

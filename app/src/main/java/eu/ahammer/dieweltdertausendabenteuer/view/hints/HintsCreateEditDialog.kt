@@ -3,11 +3,11 @@ package eu.ahammer.dieweltdertausendabenteuer.view.hints
 import android.content.Context
 import android.util.Log
 import eu.ahammer.dieweltdertausendabenteuer.model.Hint
-import eu.ahammer.dieweltdertausendabenteuer.view.InputFieldDialog
+import eu.ahammer.dieweltdertausendabenteuer.view.CreateEditDialog
 import eu.ahammer.dieweltdertausendabenteuer.viewmodel.hints.HintsViewModel
 import kotlinx.coroutines.Runnable
 
-class HintsDialog(val hintsViewModel: HintsViewModel) : InputFieldDialog() {
+class HintsCreateEditDialog(val hintsViewModel: HintsViewModel) : CreateEditDialog() {
 
     fun showInsert(context: Context) {
         show(

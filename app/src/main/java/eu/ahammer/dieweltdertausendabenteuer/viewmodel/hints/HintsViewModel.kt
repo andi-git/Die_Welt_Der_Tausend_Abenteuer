@@ -19,5 +19,9 @@ class HintsViewModel(application: Application) : AndroidViewModel(application) {
         hintDao.update(hint)
     }
 
+    fun deleteHint(hint: Hint) {
+        hintDao.delete(hint)
+    }
+
     fun getHints(): LiveData<List<Hint>> = hintDao.loadAllForLiveData()
 }

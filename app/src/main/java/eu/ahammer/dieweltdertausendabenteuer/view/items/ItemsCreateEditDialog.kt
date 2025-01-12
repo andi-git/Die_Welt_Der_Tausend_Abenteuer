@@ -3,11 +3,11 @@ package eu.ahammer.dieweltdertausendabenteuer.view.items
 import android.content.Context
 import android.util.Log
 import eu.ahammer.dieweltdertausendabenteuer.model.Item
-import eu.ahammer.dieweltdertausendabenteuer.view.InputFieldDialog
+import eu.ahammer.dieweltdertausendabenteuer.view.CreateEditDialog
 import eu.ahammer.dieweltdertausendabenteuer.viewmodel.items.ItemsViewModel
 import kotlinx.coroutines.Runnable
 
-class ItemsDialog(val itemsViewModel: ItemsViewModel) : InputFieldDialog() {
+class ItemsCreateEditDialog(val itemsViewModel: ItemsViewModel) : CreateEditDialog() {
 
     fun showInsert(context: Context) {
         show(

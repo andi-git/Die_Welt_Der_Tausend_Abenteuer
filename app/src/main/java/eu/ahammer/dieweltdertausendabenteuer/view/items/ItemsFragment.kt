@@ -25,7 +25,7 @@ class ItemsFragment : MyFragment<ItemsFragmentBinding, ItemsViewModel>(ItemsView
                     ItemsAdapter(requireContext(), getViewModel(), list)
             })
             binding.itemAddButton.setOnClickListener {
-                ItemsDialog(getViewModel()).showInsert(requireContext())
+                ItemsCreateEditDialog(getViewModel()).showInsert(requireContext())
             }
             return binding.root
         }

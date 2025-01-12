@@ -25,7 +25,7 @@ class HintsFragment : MyFragment<HintsFragmentBinding, HintsViewModel>(HintsView
                     HintsAdapter(requireContext(), getViewModel(), list)
             })
             binding.hintAddButton.setOnClickListener {
-                HintsDialog(getViewModel()).showInsert(requireContext())
+                HintsCreateEditDialog(getViewModel()).showInsert(requireContext())
             }
             return binding.root
         }

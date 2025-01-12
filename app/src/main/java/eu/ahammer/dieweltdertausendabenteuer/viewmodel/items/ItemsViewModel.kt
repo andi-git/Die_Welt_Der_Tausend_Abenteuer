@@ -19,5 +19,9 @@ class ItemsViewModel(application: Application) : AndroidViewModel(application) {
         itemDao.update(item)
     }
 
+    fun deleteItem(item: Item) {
+        itemDao.delete(item)
+    }
+
     fun getItems(): LiveData<List<Item>> = itemDao.loadAllForLiveData()
 }
