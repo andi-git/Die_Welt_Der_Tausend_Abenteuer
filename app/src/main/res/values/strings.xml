@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Die Welt der 1000 Abenteuer</string>
+    <string name="welcome"><b>Willkommen in der</b></string>
+    <string name="app_name_short_bold"><b>Welt der 1000 Abenteuer</b></string>
     <string name="title_common">Allgemeines</string>
     <string name="title_hints">Hinweise</string>
     <string name="title_items">Gegenstände</string>
